@@ -172,15 +172,16 @@ nav {
 /*Hi apa khabar */
 .first-text {
   font-size: 36px;
-	 margin-top: 40px; 
+	 margin-top: 20px; 
 	
 }
 
 .small-text {
-	margin-left: 200px;
-	margin-top: -30px;
+	margin-left:0; 
+	margin-top: -10px;
 	font-weight: bold;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+	float:right;
 }
 
 /* "web designer" */
@@ -190,7 +191,8 @@ nav {
 
 /*I use my experience to craft clean and logical designs to turn users to *believers*. My mission? To turn ‘meh’ to ‘mind blowing’.*/
 .second-text {
-  font-size: 18px;	
+  font-size: 18px;
+	margin-top: 20%;
 }
 
 /* Let's Connect*/
@@ -661,7 +663,9 @@ footer .footerlinks {
     width: 100%; /* Make main content take full width */
 	  
   }
-}
+
+
+ 
 
   .topnav {
     flex-direction: column; /* Stack navigation items vertically */
@@ -684,4 +688,7 @@ footer .footerlinks {
     float: none; /* Remove floating */
     /* Other adjustments as needed */
   }
+}
+
+
 
