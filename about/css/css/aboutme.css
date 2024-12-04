@@ -1,0 +1,791 @@
+@charset "utf-8";
+/* Global Styles */
+
+.right img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+	float: right;
+	
+	
+}
+
+
+
+
+i {
+	font-size: 24px;
+	font-weight: bold;
+		font-style: italic;
+	line-height: 0.5;
+}
+
+.image-container {
+  display: flex;
+  /* Center the images horizontally */
+  align-items: center; /* Vertically center the images */
+}
+
+.image-container img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px;
+	 border-radius: 10px; /* Adjust the radius as needed */
+	
+}
+
+.company img {
+  width: 20px;
+  
+}
+
+.hobby {
+  font-size: 36px;
+	color: #BF8C6F;
+	 text-align: center;
+}
+
+.hobbycontent {
+	margin-bottom: -10px;
+  font-size: 24px; /* Adjust font size if needed */
+  line-height: 1.0; 
+	
+}
+
+.company {
+	margin-bottom: -10px;
+  font-size: 24px; /* Adjust font size if needed */
+  line-height: 1.0; /* Adjust line height to reduce spacing between lines */
+	font-style: bold;
+	
+}
+.role {
+	margin-bottom: -10px;
+  font-size: 20px; /* Adjust font size if needed */
+  line-height: 1.0; /* Adjust line height to reduce spacing between lines */
+	font-style: italic;
+  font-weight: bold;
+	color: #BF9FBD;
+}
+.year {
+	margin-bottom: -10px;
+  font-size: 18px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height to reduce spacing between lines */
+  margin-top: 10px; /* Add top margin */
+	color: grey;
+}
+
+
+.divide {
+  display: flex;
+  justify-content: space-between;
+	 margin-left:100px;
+
+}
+
+nav {
+  display: flex; /* Make the nav element a flex container */
+	gap: 10px;
+}
+
+nav {
+  display: flex; /* Make the nav element a flex container */
+	gap: 10px;
+}
+
+/* Footer */
+.footer-container {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+	font-size:16px;
+	font-weight: 400;
+	max-width:100%;
+}
+
+.left-content {
+  /* Style the left content as needed */
+  text-align: left;
+	padding-left: 10%;
+}
+
+.right-content {
+  /* Style the left content as needed */
+  text-align: left;
+	padding-right: 10%;
+}
+/* Skill */
+
+
+
+.skillcontainer {
+  display: flex;
+  justify-content: space-between; /* Space between the images */
+  align-items: center; /* Vertically center the images */
+}
+
+.skillchart img {
+	float: left;
+  width: 60%; /* Adjust the width as needed */
+  height: auto; 
+	
+	border-radius: 10px; 
+	background-color: #f0f0f0;
+}
+.skilllogos img {
+	float: left;
+  max-width: 70%; /* Ensure the images don't exceed 50% width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* laptop image */
+.laptop {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-bottom: 20px; /* Add spacing below the image */
+	box-shadow: none;
+	  background-color: #D99E30;
+	
+}
+
+.leftaboutmearticle {
+  clear: both; /* To prevent right-floated elements from overlapping */
+	text-align: left;
+  margin-top: 40px;
+	flex:1;
+	margin-right:20px;
+	width: 100%;
+}
+.rightaboutmearticle {
+  float: right;
+  width: 100%;
+  box-sizing: border-box; /* To include padding and border in the width */
+  padding: 20px;
+	flex:1;
+	background-color: #F2E98D;
+}
+
+.aboutmearticle p {
+	margin-top: 50px;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.seemorebtn {
+  transition-duration: 0.4s;
+	background-color: #BF9FBD; /* Green */
+  color: white;
+	padding: 10px 30px;
+	font-size: 18px;
+}
+
+.seemorebtn:hover {
+  background-color: #BF9FBD; /* Green */
+  color: white;
+	padding: 14px 40px;
+	font-size: 18px;
+	font-family: "arial"
+}
+
+.container {
+ 	 width: 100%;
+	display: flex;
+	
+}
+
+/* Intro starts*/
+.article {
+  
+  width: 50%;
+  padding: 20px 20px 20px 20px;
+	flex:1;
+	background-color: #F2E98D;
+}
+
+/* My photo*/
+.article img {
+  float: left; 
+	width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: autox; /* Maintain aspect ratio */
+	margin-left: 20px;
+}
+
+
+
+/*Left Article */
+.left {
+  clear: both; /* To prevent right-floated elements from overlapping */
+	text-align: left;
+  margin-top: 0px;
+	flex:1;
+	margin-right:20px;
+}
+
+
+
+
+
+/*About Me */
+.first-text {
+  font-size: 48px;
+	
+	color: #BF8C6F;
+}
+
+/* "web designer" */
+.highlight-text {
+  color: #BF9FBD; /* Replace 'blue' with your desired color */
+}
+
+/*I use my experience to craft clean and logical designs to turn users to *believers*. My mission? To turn ‘meh’ to ‘mind blowing’.*/
+.second-text {
+  font-size: 38px;	
+	font-style:italic;
+}
+
+/* Let's Connect*/
+.third-text {
+  font-size: 24px;
+	 margin-top: 100px;
+	margin-left: -20px;
+	width: 80%;
+	
+	
+	
+}
+
+.fourth-text {
+  font-size: 36px;
+	color: #BF8C6F;
+}
+
+.fifth-text {
+	margin-top: 100px;
+  font-size: 24px;
+}
+
+.company, .role, .year {
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+
+h2 {
+  font-size: 48px;
+	color: #BF8C6F;
+		margin-left: 20px;
+	 /* Adjust the margin as needed */
+
+}
+
+.project-text {
+  color: #D99E30; /* Replace 'blue' with your desired color */
+}
+
+
+/* Slider code start*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2DA01E;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Slider code ends*/
+
+.article.right {
+ flex: 0.5;
+	
+}
+
+
+
+
+
+.heading {
+  color: #BF8C6F; 
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+
+.btn {
+	
+  border: 1px solid gray;
+  background-color: white;
+  color: grey;
+  padding: 14px 20px; /* Adjust padding as needed */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0; /* Add 10px margin top and bottom */
+	list-style-type: none;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: grey;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+body {
+  font-family: "Arial";
+	background-color: #F2E98D;
+	
+}
+
+/*top navigation bar  */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	background-color: #fff;
+  overflow: hidden; 
+}
+
+/*links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	display: block;
+	border-radius: 5px;
+}
+
+/* right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	display: block;
+	border-radius: 5px;
+}
+
+/* color of links on hover */
+.topnav a:hover {
+  background-color: #e7e7e7;
+  color: #7C7979;
+}
+
+
+
+
+a {
+	color: gray;
+	 text-decoration: none;
+	
+}
+
+a:hover {
+	
+	  text-decoration: none;	
+}
+/*header*/
+header {
+	font-family: "Arial";
+	color: rgba(255,251,251,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	
+}
+/* Logo placeholder*/
+#logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	background-color: #F2E98D;
+}
+/* div for Links in header */
+#headerLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+	float:right;
+	background-color: #F2E98D;
+}
+
+/* Links in header */
+#headerLinks a {
+	color: grey;
+	 text-decoration: none;
+	padding-left: 30px;
+	font-size: 18px;
+	 padding: 14px 16px;
+	background-color: #F2E98D;
+}
+
+#headerLinks a:hover {
+background-color: #F2E98D;
+  color: #BF9FBD;
+}
+
+/* Offer text banner*/
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: rgba(246,246,246,1.00);
+	color: rgba(146,146,146,1.00);
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 20px;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+  color: rgba(146,146,146,1.00);
+  float: left;
+  width: 30%; /* Increase width to 30% */
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  background-color: rgba(246,246,246,1.00);
+  padding-top: 36px;
+  height: auto;
+	 border-right: 1px solid black;
+	 flex: 0 0 30%; 
+	
+}
+/* main content of the site / right side*/
+#content .mainContent {
+	float: left;
+	width: 60%;
+	text-align: center;
+	padding-left: 3%;
+	flex: 1;
+	
+}
+
+
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+	text-align: left;
+  color: rgba(146, 146, 146, 1.00);
+  position: relative;
+  left: 0%;
+  margin-top: 20px; /* Add 20px of top margin */
+}
+
+/*sidebar 'see more' link */
+#content .sidebar #menubar ul li a {
+  text-align: center;
+  color: rgba(146, 146, 146, 1.00);
+  position: relative;
+  left: 0%;
+  border: none;
+}
+		
+
+/* Whole page content */
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+	background-color: #F2E98D;
+	
+	
+}
+/*menu elements */
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+	padding-bottom: 20px;
+	
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+	
+}
+/* Each product Information in the catalog / adjust sizing*/
+.mainContent .productRow .productInfo {
+	float: left;
+	width:100%; /* Take up the full width */
+  padding: 20px; /* Add padding for spacing */
+	
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: "arial", sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: rgba(146,146,146,1.00);
+	white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: rgba(208,207,207,1.00);
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(208,207,207,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 100%;
+}
+/*Links in sidebar */
+
+
+
+.sidebar #menubar .menu ul li img {
+	display: block; /* Ensure the image is displayed as a block element */
+	width:100%;
+  max-width: 100%; /* Allow the image to scale down to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  text-align: center;
+  padding: 0px; /* Adjust padding as needed */
+	margin-bottom: -20px; 
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set link color */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 5px; 
+	
+	
+}
+.sidebar #menubar .menu ul li a {
+	 display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+	margin-bottom: -20px; 
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set link color */
+  border: 1px solid #ccc; /* Optional: Add a border */
+	border-radius: 5px; }
+
+.sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: underline;
+	
+}
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+	font-size: 14px;
+	color: black;
+}
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+	font-size: 14px;
+}
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+	margin-bottom: 29px;
+	
+}
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+	
+	 #content {
+	 display: flex;
+    flex-direction: column; /* Stack elements vertically */
+		 align-items:center
+  }
+	.logo
+	{
+		align-items: center;
+	}
+	.sidebar {
+    width: 100%; /* Make sidebar take full width */
+    float: none; /* Remove floating */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+		flex-direction: row; 
+  }
+
+  .mainContent {
+    width: 100%; /* Make main content take full width */
+	  
+  }
+}
+
+  .topnav {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center;
+	  
+  }
+
+  .topnav a {
+    display: block; /* Make each link take up full width */
+    margin: 10px 0; /* Add margin between links */
+  }
+
+  .left-nav, .right-nav {
+    display: block; /* Remove flex layout */
+  }
+
+.productInfo {
+    /* Adjust width and layout for smaller screens */
+    width: 100%; /* Take full width */
+    float: none; /* Remove floating */
+    /* Other adjustments as needed */
+  }
+
+@media only screen and (max-width: 768px) {
+  /* Styles for phone screens */
+  body {
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+	width:300px;
+  /* Other specific styles for phone screens */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+ 
+  }
+  .article.right {
+ 
+    flex: 1; /* Make it take up full width */
+    width: 100%; /* Ensure full width */
+    margin-top: 20px; /* Add margin for spacing */
+	}
+
+.third-text{
+	margin-top: -50px;
+	width: 300px;
+	text-align: left;
+	
+}
+	
+.image-with-border {
+  border: 30px solid white;
+	max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; 
+}
+}
+
+
+
