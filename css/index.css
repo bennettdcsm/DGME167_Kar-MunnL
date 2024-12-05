@@ -242,7 +242,11 @@ nav {
 /*I use my experience to craft clean and logical designs to turn users to *believers*. My mission? To turn ‘meh’ to ‘mind blowing’.*/
 .second-text {
   font-size: 18px;
-	margin-top: 20%;
+	margin-top: 0%;
+}
+.secondtop-text {
+  font-size: 18px;
+	margin-top: 10%;
 }
 
 /* Let's Connect*/
