@@ -37,7 +37,7 @@
   height: auto; /* Maintain aspect ratio */
   margin: 10px;
 }
- /* row of images end*/
+ /*  of images end*/
 
 .business {
   display: flex;
@@ -90,7 +90,7 @@
 
 
 .row img {
-	width: 300px; /* Adjust the width as needed */
+	width: 500px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
 	border-radius: 10px;
 	 margin: 10px; 
