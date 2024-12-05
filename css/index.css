@@ -1,7 +1,28 @@
 @charset "utf-8";
 /* Global Styles */
 
+.leftskillsarticle img, .rightskillsarticle img {
+  
+  height: auto;
+}
 
+.leftskillsarticle img {
+  float: center; /* Float the image to the right */
+	max-width: 400px;
+	position: inherit;
+}
+
+.rightskillsarticle img {
+  width: 100%; /* Make the image take up the full width of its container */
+	float: right; /* Float the image to the right */
+	max-width: 400px;
+	position: inherit;
+	
+}
+
+
+.article.left{ width: 100%;
+padding-right: 10%}
 
 .article .laptop:hover {
   transform: scale(1.1);
@@ -39,12 +60,22 @@ nav {
 /* Skill */
 
 .leftskillsarticle {
-  clear: both; /* To prevent right-floated elements from overlapping */
+  clear: both;  
+	width: 100%;
 	text-align: left;
   margin-top: 40px;
 	flex:1;
 	margin-right:20px;
-	width: 100%;
+	height: auto;
+}
+.leftskillsarticleimg {
+  clear: both;  
+	width: 50%;
+	text-align: left;
+  margin-top: 40px;
+	flex:1;
+	margin-right:20px;
+	height: auto;
 }
 
 .rightaboutmearticle {
@@ -55,6 +86,17 @@ nav {
 	flex:1;
 	background-color: #F2E98D;
 	margin-top: 100px;
+	font-size: 20px;
+}
+
+.rightskillsarticle {
+  float: right;
+  width: 100%;
+  box-sizing: border-box; /* To include padding and border in the width */
+  padding: 20px;
+	flex:1;
+	background-color: #F2E98D;
+	margin-top: 10px;
 	font-size: 20px;
 }
 
@@ -80,13 +122,14 @@ nav {
 
 /* laptop image */
 .laptop {
-  width: 100%; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  margin-bottom: 20px; /* Add spacing below the image */
-	box-shadow: none;
-	  background-color: #D99E30;
-	
+   width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  background-color: #D99E30;
+  margin: 0 auto; /* Center the image horizontally */
+
 }
 
 .leftaboutmearticle {
@@ -96,6 +139,12 @@ nav {
 	flex:1;
 	margin-right:20px;
 	width: 100%;
+	
+
+}
+.leftaboutmearticle img{
+ max-width: 80%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; 
 }
 .rightaboutmearticle {
   float: right;
@@ -104,6 +153,7 @@ nav {
   padding: 20px;
 	flex:1;
 	background-color: #F2E98D;
+	
 }
 
 .aboutmearticle p {
@@ -172,7 +222,7 @@ nav {
 /*Hi apa khabar */
 .first-text {
   font-size: 36px;
-	 margin-top: 20px; 
+	 margin-top: 30px; 
 	
 }
 
@@ -288,7 +338,8 @@ input:checked + .slider:before {
 /* Slider code ends*/
 
 .article.right {
-  flex: 1; /* Takes up available space */
+  flex: 0.5; /* Takes up available space */
+	width: 400px;
 }
 	/* Intro ends*/
 
@@ -643,6 +694,11 @@ footer .footerlinks {
 
 @media (max-width: 768px) {
 	
+	 .laptop {
+    width: 80%; /* Adjust the width for smaller screens */
+    margin: 0 auto;
+  }
+	
 	 #content {
 	 display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -663,9 +719,27 @@ footer .footerlinks {
     width: 100%; /* Make main content take full width */
 	  
   }
+	.article.right img{
+  float: none;
+    margin-right: 0;
+    margin-bottom: 20px; 
+		width: 150%;
+	}
+	
 
+ .container {
+	flex-direction: column;
+} 
+  .leftaboutmearticle {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
 
- 
+  .rightaboutmearticle {
+   
+	  margin-top: -20px;
+	}
 
   .topnav {
     flex-direction: column; /* Stack navigation items vertically */
@@ -688,7 +762,95 @@ footer .footerlinks {
     float: none; /* Remove floating */
     /* Other adjustments as needed */
   }
+	
 }
+
+@media (max-width: 1080px) {
+	 .laptop {
+    width: 80%; /* Adjust the width for smaller screens */
+    margin: 0 auto;
+		 float: left;
+		
+  }
+	 #content {
+	 display: flex;
+    flex-direction: column; /* Stack elements vertically */
+		 align-items:center
+  }
+	.logo
+	{
+		align-items: center;
+	}
+	.sidebar {
+    width: 100%; /* Make sidebar take full width */
+    float: none; /* Remove floating */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+		flex-direction: row; 
+  }
+
+  .mainContent {
+    width: 100%; /* Make main content take full width */
+	  
+  }
+	.article.right img{
+  float: none;
+    margin-right: 0;
+    margin-bottom: 20px; 
+		width: 150%;
+	}
+	
+	
+	
+
+ .container {
+	flex-direction: column;
+   
+} 
+	
+	
+  .leftaboutmearticle {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px; 
+	 
+  }
+	.leftaboutmearticle img {
+ max-width: 80%;
+	 
+  }
+
+  .rightaboutmearticle {
+    float: none;
+	  margin-top: -10px;
+	}
+
+  .topnav {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center;
+	  
+  }
+
+  .topnav a {
+    display: block; /* Make each link take up full width */
+    margin: 10px 0; /* Add margin between links */
+  }
+
+  .left-nav, .right-nav {
+    display: block; /* Remove flex layout */
+  }
+		
+
+.productInfo {
+    /* Adjust width and layout for smaller screens */
+    width: 100%; /* Take full width */
+    float: none; /* Remove floating */
+    /* Other adjustments as needed */
+  }
+	
+	
+}
+
+
 
 
 
