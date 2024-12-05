@@ -868,6 +868,7 @@ footer .footerlinks {
 
 
 
-
-
-
+  .leftskillsarticle, .container form {
+    width: 100%; /* Make form elements full width */
+  }
+}
