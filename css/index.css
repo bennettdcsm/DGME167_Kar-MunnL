@@ -1,42 +1,87 @@
 @charset "utf-8";
 /* Global Styles */
 
-.leftskillsarticle img, .rightskillsarticle img {
-  
-  height: auto;
-}
-
-.leftskillsarticle img {
-  float: center; /* Float the image to the right */
-	max-width: 400px;
-	position: inherit;
-}
-
-.rightskillsarticle img {
-  width: 100%; /* Make the image take up the full width of its container */
-	float: right; /* Float the image to the right */
-	max-width: 400px;
-	position: inherit;
+.right img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+	float: right;
+	
 	
 }
 
 
-.article.left{ width: 100%;
-padding-right: 10%}
 
-.article .laptop:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
+
+i {
+	font-size: 24px;
+	font-weight: bold;
+		font-style: italic;
+	line-height: 0.5;
+}
+
+.image-container {
+  display: flex;
+  /* Center the images horizontally */
+  align-items: center; /* Vertically center the images */
+}
+
+.image-container img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px;
+	 border-radius: 10px; /* Adjust the radius as needed */
+	
+}
+
+.company img {
+  width: 20px;
+  
+}
+
+.hobby {
+  font-size: 36px;
+	color: #BF8C6F;
+	 text-align: center;
+}
+
+.hobbycontent {
+	margin-bottom: -10px;
+  font-size: 24px; /* Adjust font size if needed */
+  line-height: 1.0; 
+	
+}
+
+.company {
+	margin-bottom: -10px;
+  font-size: 24px; /* Adjust font size if needed */
+  line-height: 1.0; /* Adjust line height to reduce spacing between lines */
+	font-style: bold;
+	
+}
+.role {
+	margin-bottom: -10px;
+  font-size: 20px; /* Adjust font size if needed */
+  line-height: 1.0; /* Adjust line height to reduce spacing between lines */
+	font-style: italic;
+  font-weight: bold;
+	color: #BF9FBD;
+}
+.year {
+	margin-bottom: -10px;
+  font-size: 18px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height to reduce spacing between lines */
+  margin-top: 10px; /* Add top margin */
+	color: grey;
 }
 
 
-.left-content{
-	padding-left:10%;
+.divide {
+  display: flex;
+  justify-content: space-between;
+	 margin-left:100px;
+
 }
 
-.right-content{
-	padding-right:10%;
-}
 nav {
   display: flex; /* Make the nav element a flex container */
 	gap: 10px;
@@ -49,7 +94,7 @@ nav {
 
 /* Footer */
 .footer-container {
-  display: flex;
+ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -57,48 +102,21 @@ nav {
 	font-weight: 400;
 	max-width:100%;
 }
+
+.left-content {
+  /* Style the left content as needed */
+  text-align: left;
+	padding-left: 10%;
+}
+
+.right-content {
+  /* Style the left content as needed */
+  text-align: left;
+	padding-right: 10%;
+}
 /* Skill */
 
-.leftskillsarticle {
-  clear: both;  
-	width: 100%;
-	text-align: left;
-  margin-top: 40px;
-	flex:1;
-	margin-right:20px;
-	height: auto;
-}
-.leftskillsarticleimg {
-  clear: both;  
-	width: 50%;
-	text-align: left;
-  margin-top: 40px;
-	flex:1;
-	margin-right:20px;
-	height: auto;
-}
 
-.rightaboutmearticle {
-  float: right;
-  width: 100%;
-  box-sizing: border-box; /* To include padding and border in the width */
-  padding: 20px;
-	flex:1;
-	background-color: #F2E98D;
-	margin-top: 100px;
-	font-size: 20px;
-}
-
-.rightskillsarticle {
-  float: right;
-  width: 100%;
-  box-sizing: border-box; /* To include padding and border in the width */
-  padding: 20px;
-	flex:1;
-	background-color: #F2E98D;
-	margin-top: 10px;
-	font-size: 20px;
-}
 
 .skillcontainer {
   display: flex;
@@ -122,14 +140,13 @@ nav {
 
 /* laptop image */
 .laptop {
-   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: none;
-  background-color: #D99E30;
-  margin: 0 auto; /* Center the image horizontally */
-
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-bottom: 20px; /* Add spacing below the image */
+	box-shadow: none;
+	  background-color: #D99E30;
+	
 }
 
 .leftaboutmearticle {
@@ -139,12 +156,6 @@ nav {
 	flex:1;
 	margin-right:20px;
 	width: 100%;
-	
-
-}
-.leftaboutmearticle img{
- max-width: 80%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; 
 }
 .rightaboutmearticle {
   float: right;
@@ -153,7 +164,6 @@ nav {
   padding: 20px;
 	flex:1;
 	background-color: #F2E98D;
-	
 }
 
 .aboutmearticle p {
@@ -167,19 +177,14 @@ nav {
   color: white;
 	padding: 10px 30px;
 	font-size: 18px;
-	font-family: "arial";
-	 border: 2px solid black;
-	font-weight:bold;
-	
-	
 }
 
 .seemorebtn:hover {
   background-color: #BF9FBD; /* Green */
   color: white;
-	font-size: 20px;
-	font-family: "arial";
-		cursor: pointer;
+	padding: 14px 40px;
+	font-size: 18px;
+	font-family: "arial"
 }
 
 .container {
@@ -190,19 +195,18 @@ nav {
 
 /* Intro starts*/
 .article {
-  float: left;
+  
   width: 50%;
-  box-sizing: border-box; /* To include padding and border in the width */
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 	flex:1;
 	background-color: #F2E98D;
 }
 
 /* My photo*/
 .article img {
-  float: right; 
-	max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; /* Maintain aspect ratio */
+  float: left; 
+	width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: autox; /* Maintain aspect ratio */
 	margin-left: 20px;
 }
 
@@ -212,26 +216,20 @@ nav {
 .left {
   clear: both; /* To prevent right-floated elements from overlapping */
 	text-align: left;
-  margin-top: 50px;
+  margin-top: 0px;
 	flex:1;
 	margin-right:20px;
 }
 
 
 
-/*Hi apa khabar */
-.first-text {
-  font-size: 36px;
-	 margin-top: 30px; 
-	
-}
 
-.small-text {
-	margin-left:0; 
-	margin-top: -10px;
-	font-weight: bold;
-	margin-bottom: 60px;
-	float:right;
+
+/*About Me */
+.first-text {
+  font-size: 48px;
+	
+	color: #BF8C6F;
 }
 
 /* "web designer" */
@@ -241,23 +239,35 @@ nav {
 
 /*I use my experience to craft clean and logical designs to turn users to *believers*. My mission? To turn ‘meh’ to ‘mind blowing’.*/
 .second-text {
-  font-size: 18px;
-	margin-top: 20%;
+  font-size: 38px;	
+	font-style:italic;
 }
 
 /* Let's Connect*/
 .third-text {
-  font-size: 18px;
-	 margin-top: -25px; 
-	margin-left: 70px;
+  font-size: 24px;
+	 margin-top: 100px;
+	margin-left: -20px;
+	width: 80%;
+	
+	
+	
 }
 
 .fourth-text {
-	
   font-size: 36px;
-	color: #D99E30;
-
+	color: #BF8C6F;
 }
+
+.fifth-text {
+	margin-top: 100px;
+  font-size: 24px;
+}
+
+.company, .role, .year {
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
 
 h2 {
   font-size: 48px;
@@ -338,10 +348,11 @@ input:checked + .slider:before {
 /* Slider code ends*/
 
 .article.right {
-  flex: 0.5; /* Takes up available space */
-	width: 400px;
+ flex: 0.5;
+	
 }
-	/* Intro ends*/
+
+
 
 
 
@@ -381,6 +392,7 @@ input:checked + .slider:before {
 body {
   font-family: "Arial";
 	background-color: #F2E98D;
+	
 }
 
 /*top navigation bar  */
@@ -461,7 +473,6 @@ header {
   overflow: hidden;
 	float:right;
 	background-color: #F2E98D;
-	
 }
 
 /* Links in header */
@@ -546,6 +557,7 @@ background-color: #F2E98D;
 	width: 80%;
 	padding-left: 10%;
 	background-color: #F2E98D;
+	
 	
 }
 /*menu elements */
@@ -694,11 +706,6 @@ footer .footerlinks {
 
 @media (max-width: 768px) {
 	
-	 .laptop {
-    width: 80%; /* Adjust the width for smaller screens */
-    margin: 0 auto;
-  }
-	
 	 #content {
 	 display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -719,27 +726,7 @@ footer .footerlinks {
     width: 100%; /* Make main content take full width */
 	  
   }
-	.article.right img{
-  float: none;
-    margin-right: 0;
-    margin-bottom: 20px; 
-		width: 150%;
-	}
-	
-
- .container {
-	flex-direction: column;
-} 
-  .leftaboutmearticle {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 20px; /* Add margin for spacing */
-  }
-
-  .rightaboutmearticle {
-   
-	  margin-top: -20px;
-	}
+}
 
   .topnav {
     flex-direction: column; /* Stack navigation items vertically */
@@ -762,95 +749,43 @@ footer .footerlinks {
     float: none; /* Remove floating */
     /* Other adjustments as needed */
   }
-	
-}
 
-@media (max-width: 1080px) {
-	 .laptop {
-    width: 80%; /* Adjust the width for smaller screens */
-    margin: 0 auto;
-		 float: left;
-		
+@media only screen and (max-width: 768px) {
+  /* Styles for phone screens */
+  body {
+    font-size: 14px; /* Adjust font size as needed */
   }
-	 #content {
-	 display: flex;
+  .container {
     flex-direction: column; /* Stack elements vertically */
-		 align-items:center
-  }
-	.logo
-	{
-		align-items: center;
-	}
-	.sidebar {
-    width: 100%; /* Make sidebar take full width */
-    float: none; /* Remove floating */
-    margin-bottom: 20px; /* Add bottom margin for spacing */
-		flex-direction: row; 
-  }
-
-  .mainContent {
-    width: 100%; /* Make main content take full width */
-	  
-  }
-	.article.right img{
-  float: none;
-    margin-right: 0;
-    margin-bottom: 20px; 
-		width: 150%;
-	}
-	
-	
-	
-
- .container {
-	flex-direction: column;
-   
-} 
-	
-	
-  .leftaboutmearticle {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 20px; 
-	 
-  }
-	.leftaboutmearticle img {
- max-width: 80%;
-	 
-  }
-
-  .rightaboutmearticle {
-    float: none;
-	  margin-top: -10px;
-	}
-
-  .topnav {
-    flex-direction: column; /* Stack navigation items vertically */
-    align-items: center;
-	  
-  }
-
-  .topnav a {
-    display: block; /* Make each link take up full width */
-    margin: 10px 0; /* Add margin between links */
-  }
-
-  .left-nav, .right-nav {
-    display: block; /* Remove flex layout */
-  }
-		
-
-.productInfo {
-    /* Adjust width and layout for smaller screens */
-    width: 100%; /* Take full width */
-    float: none; /* Remove floating */
-    /* Other adjustments as needed */
-  }
-	
-	
+	width:300px;
+  /* Other specific styles for phone screens */
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+ 
+  }
+  .article.right {
+ 
+    flex: 1; /* Make it take up full width */
+    width: 100%; /* Ensure full width */
+    margin-top: 20px; /* Add margin for spacing */
+	}
 
+.third-text{
+	margin-top: -50px;
+	width: 300px;
+	text-align: left;
+	
+}
+	
+.image-with-border {
+  border: 30px solid white;
+	max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; 
+}
+}
 
 
 
