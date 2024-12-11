@@ -17,10 +17,12 @@
 }
 	
 .image-container {
-  display: flex;
-  justify-content: center; /* Center the images horizontally */
-  align-items: center; /* Vertically center the images */
-  flex-wrap: wrap; /* Wrap the images to a new line if they don't fit */
+   display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  max-width: 100%; 
+	
 }
 	
 
@@ -697,6 +699,11 @@ footer .footerlinks {
 
 @media (max-width: 768px) {
 	
+	
+	.image-container{
+		 justify-content: center;
+	}
+	
 	 #content {
 	 display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -741,6 +748,11 @@ footer .footerlinks {
     /* Other adjustments as needed */
   }
 
+.first-text {
+	text-align: center;
+	margin-left: 25%;
+}
+
 @media only screen and (max-width: 768px) {
   /* Styles for phone screens */
   body {
@@ -766,6 +778,7 @@ footer .footerlinks {
 	width: 300px;
 	text-align: center;
 }
+	
 	
 .image-with-border {
   border: 30px solid white;
