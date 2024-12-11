@@ -746,6 +746,19 @@ footer .footerlinks {
 
 @media (max-width: 768px) {
 	
+	.first-text{
+		text-align: center;
+	}
+	
+	.second-text{
+		text-align: center;
+		
+	}
+	
+	.fifth-text{
+		text-align: center;
+	}
+	
 	 #content {
 	 display: flex;
     flex-direction: column; /* Stack elements vertically */
