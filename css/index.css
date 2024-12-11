@@ -30,33 +30,84 @@ padding-right: 10%}
 }
 
 
-.left-content{
-	padding-left:10%;
-}
 
-.right-content{
-	padding-right:10%;
-}
-nav {
-  display: flex; /* Make the nav element a flex container */
-	gap: 10px;
-}
-
-nav {
-  display: flex; /* Make the nav element a flex container */
-	gap: 10px;
-}
 
 /* Footer */
-.footer-container {
+footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-	font-size:16px;
-	font-weight: 400;
-	max-width:100%;
+  flex-direction: column; 
+  align-items: center; 
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 100%; 
 }
+
+.content-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.social-icons-container {
+  text-align: right; 
+}
+
+.social-icons-container img {
+  width: 100%;
+  height: auto;
+  max-width: 45px;
+ 
+}
+
+.left-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: left;
+}
+
+.left-content p {
+  margin-top: 0;
+	padding-left: 10%;
+}
+
+.right-content {
+  width: 100%;
+  height: auto;
+  text-align: right;
+}
+
+.right-content p {
+  margin-top: 0;
+  justify-content: flex-end; 
+	padding-right:10%;
+}
+
+.right-content img {
+  width: 45px;
+  height: auto;
+  max-width: 100%;
+}
+
+.right-content nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; 
+	
+}
+
+nav {
+  display: flex; /* Make the nav element a flex container */
+  gap: 10px;
+  width: 90%; 
+   
+	justify-content: flex-end;/* Align icons vertically within the nav */
+	margin-right: 10%;
+	padding-right:10%;
+}
+	
+
+
 /* Skill */
 
 .leftskillsarticle {
@@ -203,7 +254,7 @@ nav {
   float: right; 
 	max-width: 100%; /* Ensure the image doesn't exceed its container's width */
   height: auto; /* Maintain aspect ratio */
-	margin-left: 20px;
+	
 }
 
 
@@ -230,7 +281,7 @@ nav {
 	margin-left:0; 
 	margin-top: -10px;
 	font-weight: bold;
-	margin-bottom: 60px;
+	
 	float:right;
 }
 
@@ -242,11 +293,11 @@ nav {
 /*I use my experience to craft clean and logical designs to turn users to *believers*. My mission? To turn ‘meh’ to ‘mind blowing’.*/
 .second-text {
   font-size: 18px;
-	margin-top: 0%;
+	margin-top: 15%;
 }
 .secondtop-text {
   font-size: 18px;
-	margin-top: 20%;
+	margin-bottom: 10%;
 }
 
 /* Let's Connect*/
@@ -467,6 +518,8 @@ header {
 	background-color: #F2E98D;
 	
 }
+
+
 
 /* Links in header */
 #headerLinks a {
@@ -698,39 +751,114 @@ footer .footerlinks {
 
 @media (max-width: 768px) {
 	
-	 .laptop {
+	.left-content{
+		padding-left:5%;
+	}
+		.right-content{
+		padding-left:5%;
+	}
+	
+
+	
+	.leftskillsarticle{
+		margin-top: 30%;
+		
+	}
+	
+	p{
+		text-align: center;
+	}
+	
+	.leftaboutmearticle img {
+		display: block;
+		margin-left: 10%;
+		margin-top:15%;
+		
+	}
+	
+	.seemorebtn {
+  display: block; 
+  margin: 0 auto; 
+		margin-top:15%;
+		
+}
+
+	.fourth-text{
+		text-align:center;
+		margin-bottom: -10%;
+	}
+	
+	.secondtop-text{
+		text-align: center;	
+		margin-top:20%;
+	}
+	
+	
+	
+#headerLinks {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+ 	overflow: hidden;
+	float:right;
+	background-color: #F2E98D;
+	margin-right: -20px;
+}
+	
+	h2{
+	margin-bottom: -10%;
+		margin-top: 20%;
+		text-align: center;
+		margin-right: 20px;
+	}
+	
+	b{
+	margin-bottom: -10%;
+	}
+	
+	
+.laptop {
     width: 80%; /* Adjust the width for smaller screens */
     margin: 0 auto;
   }
 	
-	 #content {
-	 display: flex;
+#content {
+	display: flex;
     flex-direction: column; /* Stack elements vertically */
-		 align-items:center
+	align-items:center
   }
-	.logo
-	{
-		align-items: center;
+	
+.logo{
+	align-items: center;
 	}
-	.sidebar {
+	
+.sidebar {
     width: 100%; /* Make sidebar take full width */
     float: none; /* Remove floating */
     margin-bottom: 20px; /* Add bottom margin for spacing */
-		flex-direction: row; 
+	flex-direction: row; 
   }
 
   .mainContent {
     width: 100%; /* Make main content take full width */
 	  
   }
-	.article.right img{
-  float: none;
+.article.right img{
+  	float: none;
     margin-right: 0;
     margin-bottom: 20px; 
-		width: 150%;
+	width: 150%;
 	}
 	
-
+.small-text{
+	margin-top: 5%;
+		
+	}
+.second-text {
+	margin-top: 50%;
+	max-width: 700px;
+	text-align: center;
+	}
  .container {
 	flex-direction: column;
 } 
@@ -798,7 +926,6 @@ footer .footerlinks {
   }
 	.article.right img{
   float: none;
-    margin-right: 0;
     margin-bottom: 20px; 
 		width: 150%;
 	}
